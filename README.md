@@ -32,6 +32,8 @@
 * Website: https://imxnoobx.github.io/noob-main
 * Github: [@IMXNOOBX](https://github.com/IMXNOOBX)
 
+* Credits: [Kiddions](https://www.unknowncheats.me/forum/members/1861563.html) For Making The **Modest Menu**
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/IMXNOOBX/modest-menu-snippets/issues). You can also take a look at the [contributing guide](https://github.com/IMXNOOBX/modest-menu-snippets/blob/master/CONTRIBUTING.md).

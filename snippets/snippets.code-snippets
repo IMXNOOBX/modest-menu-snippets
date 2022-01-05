@@ -1,0 +1,505 @@
+{
+    //Glovals
+    "Get a Global Bool": {
+        "prefix": "glovals.get_boolean",
+        "body": "globals.get_boolean(${1:Integer index})$0",
+        "description": "Returned value: bool"
+    },
+    "Get a Global Float": {
+        "prefix": "glovals.get_float",
+        "body": "globals.get_float(${1:Integer index})$0",
+        "description": "Returned value: float"
+    },
+    "Get a Global Int": {
+        "prefix": "glovals.get_int",
+        "body": "globals.get_int(${1:Integer index})$0",
+        "description": "Returned value: int"
+    },
+    "Get a Global Uint": {
+        "prefix": "glovals.get_uint",
+        "body": "globals.get_uint(${1:Integer index})$0",
+        "description": "Returned value: uint"
+    },
+    "Set a Global Float": {
+        "prefix": "glovals.set_float",
+        "body": "globals.set_float(${1:Integer index}, ${2:bool value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set a Global int": {
+        "prefix": "glovals.set_int",
+        "body": "globals.set_int(${1:Integer index}, ${2:bool value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set a Global Uint": {
+        "prefix": "glovals.set_uint",
+        "body": "globals.set_uint(${1:Integer index}, ${2:bool value})$0",
+        "description": "Returned value: nil"
+    },
+    //Menu
+
+    "Register Hotkey": {
+        "prefix": "menu.register_hotkey",
+        "body": "menu.register_hotkey(${1:Integer keycode}, ${2:function callback})$0",
+        "description": "Returned value: lua ref"
+    },
+    "Register Callback": {
+        "prefix": "menu.register_callback",
+        "body": "menu.register_callback('${1|OnPlayerChanged,OnVehicleChanged,OnWeaponChanged|}', ${2:function callback})$0",
+        "description": "Returned value: lua ref"
+    },
+
+    "Add Action": {
+        "prefix": "menu.add_action",
+        "body": "menu.add_action('${1:String name}', function ${2:action_function})$0",
+        "description": "Returned value: nil"
+    },
+    "Add Float in Range": {
+        "prefix": "menu.add_float_range",
+        "body": "menu.add_float_range('${1:String name}', ${2:float step}, ${3:float min_value}, ${4:float max_value}, ${5:function getter}, ${6:function setter})$0",
+        "description": "Returned value: nil"
+    },
+    "Add Int in Range": {
+        "prefix": "menu.add_int_range",
+        "body": "menu.add_int_range('${1:String name}', ${2:int step}, ${3:int min_value}, ${4:int max_value}, ${5:function getter}, ${6:function setter})$0",
+        "description": "Returned value: nil"
+    },
+    "Add Toggle": {
+        "prefix": "menu.add_toggle",
+        "body": "menu.add_toggle('${1:String name}', ${2:function getter}, ${3:function setter})$0",
+        "description": "Returned value: nil"
+    },
+    "Remove Hotkey": {
+        "prefix": "menu.remove_hotkey",
+        "body": "menu.remove_hotkey(${1:Lua_ref reference})$0",
+        "description": "Returned value: nil"
+    },
+    "Remove Callback": {
+        "prefix": "menu.remove_callback",
+        "body": "menu.remove_callback(${1:Lua_ref reference})$0",
+        "description": "Returned value: nil"
+    },
+    "Send Key Down": {
+        "prefix": "menu.send_key_down",
+        "body": "menu.send_key_down(${1:Integer keycode})$0",
+        "description": "Returned value: nil"
+    },
+    "Send Key Press": {
+        "prefix": "menu.send_key_press",
+        "body": "menu.send_key_press(${1:Integer keycode})$0",
+        "description": "Returned value: nil"
+    },
+    "Send Key Up": {
+        "prefix": "menu.send_key_up",
+        "body": "menu.send_key_up(${1:Integer keycode})$0",
+        "description": "Returned value: nil"
+    },
+   
+    "Call air strike": {
+        "prefix": "menu.call_airstrike",
+        "body": "menu.call_airstrike()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Call Heli Backup": {
+        "prefix": "menu.call_heli_backup",
+        "body": "menu.call_heli_backup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Clear Wanted Level": {
+        "prefix": "menu.clear_wanted_level",
+        "body": "menu.clear_wanted_level()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Ammo": {
+        "prefix": "menu.deliver_ammo",
+        "body": "menu.deliver_ammo()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Avenger": {
+        "prefix": "menu.deliver_avenger",
+        "body": "menu.deliver_avenger()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Bullshark": {
+        "prefix": "menu.deliver_bullshark",
+        "body": "menu.deliver_bullshark()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Dinghy": {
+        "prefix": "menu.deliver_dinghy",
+        "body": "menu.deliver_dinghy()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Kosatka": {
+        "prefix": "menu.deliver_kosatka",
+        "body": "menu.deliver_kosatka()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Minigun": {
+        "prefix": "menu.deliver_minigun",
+        "body": "menu.deliver_minigun()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Moc": {
+        "prefix": "menu.deliver_moc",
+        "body": "menu.deliver_moc()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Personal Vehicle": {
+        "prefix": "menu.deliver_personal_vehicle",
+        "body": "menu.deliver_personal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Terrorbyte": {
+        "prefix": "menu.deliver_terrorbyte",
+        "body": "menu.deliver_terrorbyte()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Detach Objects": {
+        "prefix": "menu.detach_objects",
+        "body": "menu.detach_objects()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Disconnect Sesion": {
+        "prefix": "menu.disconnect_session",
+        "body": "menu.disconnect_session()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Empty Session": {
+        "prefix": "menu.empty_session",
+        "body": "menu.empty_session()\n$0",
+        "description": "Returned value: nil"
+    },
+    "End CutScene": {
+        "prefix": "menu.end_cutscene",
+        "body": "menu.end_cutscene()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Enter Personal Vehicle": {
+        "prefix": "menu.enter_personal_vehicle",
+        "body": "menu.enter_personal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Heal all": {
+        "prefix": "menu.heal_all",
+        "body": "menu.heal_all()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Heall Player": {
+        "prefix": "menu.heal_player",
+        "body": "menu.heal_player()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Heal Vehicle": {
+        "prefix": "menu.heal_vehicle",
+        "body": "menu.heal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Bullshak": {
+        "prefix": "menu.instant_bullshark",
+        "body": "menu.instant_bullshark()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Drone": {
+        "prefix": "menu.instant_drone",
+        "body": "menu.instant_drone()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Minigun": {
+        "prefix": "menu.instant_minigun",
+        "body": "menu.instant_minigun()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Rcbsndito": {
+        "prefix": "menu.instant_rcbandito",
+        "body": "menu.instant_rcbandito()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill All Vehicles": {
+        "prefix": "menu.kill_all_vehicles",
+        "body": "menu.kill_all_vehicles()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill all Enemies": {
+        "prefix": "menu.kill_all_enemies",
+        "body": "menu.kill_all_enemies()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill all Mission Peds": {
+        "prefix": "menu.kill_all_mission_peds",
+        "body": "menu.kill_all_mission_peds()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill all Mission Vehicles": {
+        "prefix": "menu.kill_all_mission_vehicles",
+        "body": "menu.kill_all_mission_vehicles()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill All Npcs": {
+        "prefix": "menu.kill_all_npcs",
+        "body": "menu.kill_all_npcs()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill Current Vehicle": {
+        "prefix": "menu.kill_current_vehicle",
+        "body": "menu.kill_current_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Level Current Vehicle": {
+        "prefix": "menu.level_current_vehicle",
+        "body": "menu.level_current_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Max all ammo": {
+        "prefix": "menu.max_all_ammo",
+        "body": "menu.max_all_ammo()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Mac Current Ammo": {
+        "prefix": "menu.max_current_ammo",
+        "body": "menu.max_current_ammo()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Refill Boost": {
+        "prefix": "menu.refill_boost",
+        "body": "menu.refill_boost()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Remove Insurance Claims": {
+        "prefix": "menu.remove_insurance_claims",
+        "body": "menu.remove_insurance_claims()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Repair Online Vehicle": {
+        "prefix": "menu.repair_online_vehicle",
+        "body": "menu.repair_online_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Retrieve Personal Vehicle": {
+        "prefix": "menu.retrieve_personal_vehicle",
+        "body": "menu.retrieve_personal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Start Choose Character": {
+        "prefix": "menu.start_choose_character",
+        "body": "menu.start_choose_character()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Start Creator Mode": {
+        "prefix": "menu.start_creator_mode",
+        "body": "menu.start_creator_mode()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Start Single Player": {
+        "prefix": "menu.start_singleplayer",
+        "body": "menu.start_singleplayer()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Suicide Player": {
+        "prefix": "menu.suicide_player",
+        "body": "menu.suicide_player()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport Forward": {
+        "prefix": "menu.teleport_forward",
+        "body": "menu.teleport_forward()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport To Current Vehicle": {
+        "prefix": "menu.teleport_to_current_vehicle",
+        "body": "menu.teleport_to_current_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport To Objective": {
+        "prefix": "menu.teleport_to_objective",
+        "body": "menu.teleport_to_objective()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport To Waypoint": {
+        "prefix": "menu.teleport_to_waypoint",
+        "body": "menu.teleport_to_waypoint()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Boat Pickup": {
+        "prefix": "menu.trigger_boat_pickup",
+        "body": "menu.trigger_boat_pickup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Bunker Production": {
+        "prefix": "menu.trigger_bunker_production",
+        "body": "menu.trigger_bunker_production()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Bunker Research": {
+        "prefix": "menu.trigger_bunker_research",
+        "body": "menu.trigger_bunker_research()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Heli Pickup": {
+        "prefix": "menu.trigger_heli_pickup",
+        "body": "menu.trigger_heli_pickup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Vip Heli Piickup": {
+        "prefix": "menu.trigger_heli_vip_pickup",
+        "body": "menu.trigger_heli_vip_pickup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "trigger NightClub Production": {
+        "prefix": "menu.trigger_nightclub_production",
+        "body": "menu.trigger_nightclub_production()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Get Assited Aim": {
+        "prefix": "menu.get_assisted_aim",
+        "body": "menu.get_assisted_aim()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Bribe Authorities": {
+        "prefix": "menu.get_bribe_authorities",
+        "body": "menu.get_bribe_authorities()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Cops Turn Blind Eye": {
+        "prefix": "menu.get_cops_turn_blind_eye",
+        "body": "menu.get_cops_turn_blind_eye()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Crash To Sp": {
+        "prefix": "menu.get_disable_crash_to_sp",
+        "body": "menu.get_disable_crash_to_sp()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Send To Island": {
+        "prefix": "menu.get_disable_send_to_island",
+        "body": "menu.get_disable_send_to_island()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Send To Job": {
+        "prefix": "menu.get_disable_send_to_job",
+        "body": "menu.get_disable_send_to_job()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Teleport To Apartment": {
+        "prefix": "menu.get_disable_teleport_to_apartment",
+        "body": "menu.get_disable_teleport_to_apartment()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Vehicle Kick": {
+        "prefix": "menu.get_disable_vehicle_kick",
+        "body": "menu.get_disable_vehicle_kick()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Weather Control": {
+        "prefix": "menu.get_disable_weather_control",
+        "body": "menu.get_disable_weather_control()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Ghost Org": {
+        "prefix": "menu.get_ghost_organisation",
+        "body": "menu.get_ghost_organisation()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get NightVision": {
+        "prefix": "menu.get_nightvision",
+        "body": "menu.get_nightvision()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get OffRadar": {
+        "prefix": "menu.get_offradar",
+        "body": "menu.get_offradar()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Passive": {
+        "prefix": "menu.get_passive",
+        "body": "menu.get_passive()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Reveal Player": {
+        "prefix": "menu.get_reveal_player",
+        "body": "menu.get_reveal_player()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Thermal Vision": {
+        "prefix": "menu.get_thermalvision",
+        "body": "menu.get_thermalvision()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Set Assited Aim": {
+        "prefix": "menu.set_assisted_aim",
+        "body": "menu.set_assisted_aim(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Bribe Authorities": {
+        "prefix": "menu.set_bribe_authorities",
+        "body": "menu.set_bribe_authorities(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Cops Trun Blind Eye": {
+        "prefix": "menu.set_cops_turn_blind_eye",
+        "body": "menu.set_cops_turn_blind_eye(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disabel Crash To Sp": {
+        "prefix": "menu.set_disable_crash_to_sp",
+        "body": "menu.set_disable_crash_to_sp(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Send To Island": {
+        "prefix": "menu.set_disable_send_to_island",
+        "body": "menu.set_disable_send_to_island(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Send To Job": {
+        "prefix": "menu.set_disable_send_to_job",
+        "body": "menu.set_disable_send_to_job(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Teleport To Apartment": {
+        "prefix": "menu.set_disable_teleport_to_apartment",
+        "body": "menu.set_disable_teleport_to_apartment(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable vehicle Kick": {
+        "prefix": "menu.set_disable_vehicle_kick",
+        "body": "menu.set_disable_vehicle_kick(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Weather Control": {
+        "prefix": "menu.set_disable_weather_control",
+        "body": "menu.set_disable_weather_control(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Ghost Org": {
+        "prefix": "menu.set_ghost_organisation",
+        "body": "menu.set_ghost_organisation(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set NightVision": {
+        "prefix": "menu.set_nightvision",
+        "body": "menu.set_nightvision(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set OffRadar": {
+        "prefix": "menu.set_offradar",
+        "body": "menu.set_offradar(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Passive": {
+        "prefix": "menu.set_passive",
+        "body": "menu.set_passive(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Reveal Player": {
+        "prefix": "menu.set_reveal_player",
+        "body": "menu.set_reveal_player(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Termal Vision": {
+        "prefix": "menu.set_thermalvision",
+        "body": "menu.set_thermalvision(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+
+
+    
+}

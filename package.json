@@ -1,0 +1,20 @@
+{
+    "name": "modest-menu-snippets",
+    "displayName": "Kiddion's Modest Menu Snippets",
+    "description": "Unnoffical Kiddion's modest menu vscode snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "lua",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

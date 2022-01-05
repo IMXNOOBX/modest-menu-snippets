@@ -3,7 +3,7 @@
     "displayName": "Kiddion's Modest Menu Snippets",
     "description": "Unnoffical Kiddion's modest menu vscode snippets",
     "version": "1.0.2",
-    "icon": "icon.png",
+    "icon": "https://github.com/IMXNOOBX/modest-menu-snippets/raw/main/icon.png",
     "engines": {
         "vscode": "^1.63.0"
     },

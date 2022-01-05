@@ -3,7 +3,7 @@
     "displayName": "Kiddion's Modest Menu Snippets",
     "description": "Unnoffical Kiddion's modest menu vscode snippets",
     "version": "1.0.2",
-    "icon": "https://github.com/IMXNOOBX/modest-menu-snippets/raw/main/icon.png",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -11,7 +11,7 @@
         "type": "git",
         "url": "git+https://github.com/IMXNOOBX/modest-menu-snippets.git"
     },
-    "author": "IMXNOOBX",
+    "publisher": "IMXNOOBX",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/IMXNOOBX/modest-menu-snippets/issues"

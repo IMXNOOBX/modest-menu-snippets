@@ -1,0 +1,1288 @@
+{
+    //globals >----------------------------------------------------------------------
+    "Get a Global Bool": {
+        "prefix": "globals.get_boolean",
+        "body": "globals.get_boolean(${1:Integer index})$0",
+        "description": "Returned value: bool"
+    },
+    "Get a Global Float": {
+        "prefix": "globals.get_float",
+        "body": "globals.get_float(${1:Integer index})$0",
+        "description": "Returned value: float"
+    },
+    "Get a Global Int": {
+        "prefix": "globals.get_int",
+        "body": "globals.get_int(${1:Integer index})$0",
+        "description": "Returned value: int"
+    },
+    "Get a Global Uint": {
+        "prefix": "globals.get_uint",
+        "body": "globals.get_uint(${1:Integer index})$0",
+        "description": "Returned value: uint"
+    },
+    "Set a Global Float": {
+        "prefix": "globals.set_float",
+        "body": "globals.set_float(${1:Integer index}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set a Global int": {
+        "prefix": "globals.set_int",
+        "body": "globals.set_int(${1:Integer index}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set a Global Uint": {
+        "prefix": "globals.set_uint",
+        "body": "globals.set_uint(${1:Integer index}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+
+    //Menu >----------------------------------------------------------------------
+
+    "Register Hotkey": {
+        "prefix": "menu.register_hotkey",
+        "body": "menu.register_hotkey(${1:Integer keycode}, ${2:function callback})$0",
+        "description": "Returned value: lua ref"
+    },
+    "Register Callback": {
+        "prefix": "menu.register_callback",
+        "body": "menu.register_callback('${1|OnPlayerChanged,OnVehicleChanged,OnWeaponChanged|}', function ${2:callback})$0",
+        "description": "Returned value: lua ref"
+    },
+
+    "Add Action": {
+        "prefix": "menu.add_action",
+        "body": "menu.add_action('${1:String name}', function ${2:action_function})$0",
+        "description": "Returned value: nil"
+    },
+    "Add Float in Range": {
+        "prefix": "menu.add_float_range",
+        "body": "menu.add_float_range('${1:String name}', ${2:float step}, ${3:float min_value}, ${4:float max_value}, ${5:function getter}, ${6:function setter})$0",
+        "description": "Returned value: nil"
+    },
+    "Add Int in Range": {
+        "prefix": "menu.add_int_range",
+        "body": "menu.add_int_range('${1:String name}', ${2:int step}, ${3:int min_value}, ${4:int max_value}, ${5:function getter}, ${6:function setter})$0",
+        "description": "Returned value: nil"
+    },
+    "Add Toggle": {
+        "prefix": "menu.add_toggle",
+        "body": "menu.add_toggle('${1:String name}', ${2:function getter}, ${3:function setter})$0",
+        "description": "Returned value: nil"
+    },
+    "Remove Hotkey": {
+        "prefix": "menu.remove_hotkey",
+        "body": "menu.remove_hotkey(${1:Lua_ref reference})$0",
+        "description": "Returned value: nil"
+    },
+    "Remove Callback": {
+        "prefix": "menu.remove_callback",
+        "body": "menu.remove_callback(${1:Lua_ref reference})$0",
+        "description": "Returned value: nil"
+    },
+    "Send Key Down": {
+        "prefix": "menu.send_key_down",
+        "body": "menu.send_key_down(${1:Integer keycode})$0",
+        "description": "Returned value: nil"
+    },
+    "Send Key Press": {
+        "prefix": "menu.send_key_press",
+        "body": "menu.send_key_press(${1:Integer keycode})$0",
+        "description": "Returned value: nil"
+    },
+    "Send Key Up": {
+        "prefix": "menu.send_key_up",
+        "body": "menu.send_key_up(${1:Integer keycode})$0",
+        "description": "Returned value: nil"
+    },
+   
+    "Call air strike": {
+        "prefix": "menu.call_airstrike",
+        "body": "menu.call_airstrike()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Call Heli Backup": {
+        "prefix": "menu.call_heli_backup",
+        "body": "menu.call_heli_backup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Clear Wanted Level": {
+        "prefix": "menu.clear_wanted_level",
+        "body": "menu.clear_wanted_level()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Ammo": {
+        "prefix": "menu.deliver_ammo",
+        "body": "menu.deliver_ammo()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Avenger": {
+        "prefix": "menu.deliver_avenger",
+        "body": "menu.deliver_avenger()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Bullshark": {
+        "prefix": "menu.deliver_bullshark",
+        "body": "menu.deliver_bullshark()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Dinghy": {
+        "prefix": "menu.deliver_dinghy",
+        "body": "menu.deliver_dinghy()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Kosatka": {
+        "prefix": "menu.deliver_kosatka",
+        "body": "menu.deliver_kosatka()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Minigun": {
+        "prefix": "menu.deliver_minigun",
+        "body": "menu.deliver_minigun()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Moc": {
+        "prefix": "menu.deliver_moc",
+        "body": "menu.deliver_moc()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Personal Vehicle": {
+        "prefix": "menu.deliver_personal_vehicle",
+        "body": "menu.deliver_personal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Deliver Terrorbyte": {
+        "prefix": "menu.deliver_terrorbyte",
+        "body": "menu.deliver_terrorbyte()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Detach Objects": {
+        "prefix": "menu.detach_objects",
+        "body": "menu.detach_objects()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Disconnect Sesion": {
+        "prefix": "menu.disconnect_session",
+        "body": "menu.disconnect_session()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Empty Session": {
+        "prefix": "menu.empty_session",
+        "body": "menu.empty_session()\n$0",
+        "description": "Returned value: nil"
+    },
+    "End CutScene": {
+        "prefix": "menu.end_cutscene",
+        "body": "menu.end_cutscene()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Enter Personal Vehicle": {
+        "prefix": "menu.enter_personal_vehicle",
+        "body": "menu.enter_personal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Heal all": {
+        "prefix": "menu.heal_all",
+        "body": "menu.heal_all()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Heall Player": {
+        "prefix": "menu.heal_player",
+        "body": "menu.heal_player()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Heal Vehicle": {
+        "prefix": "menu.heal_vehicle",
+        "body": "menu.heal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Bullshak": {
+        "prefix": "menu.instant_bullshark",
+        "body": "menu.instant_bullshark()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Drone": {
+        "prefix": "menu.instant_drone",
+        "body": "menu.instant_drone()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Minigun": {
+        "prefix": "menu.instant_minigun",
+        "body": "menu.instant_minigun()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Instant Rcbsndito": {
+        "prefix": "menu.instant_rcbandito",
+        "body": "menu.instant_rcbandito()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill All Vehicles": {
+        "prefix": "menu.kill_all_vehicles",
+        "body": "menu.kill_all_vehicles()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill all Enemies": {
+        "prefix": "menu.kill_all_enemies",
+        "body": "menu.kill_all_enemies()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill all Mission Peds": {
+        "prefix": "menu.kill_all_mission_peds",
+        "body": "menu.kill_all_mission_peds()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill all Mission Vehicles": {
+        "prefix": "menu.kill_all_mission_vehicles",
+        "body": "menu.kill_all_mission_vehicles()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill All Npcs": {
+        "prefix": "menu.kill_all_npcs",
+        "body": "menu.kill_all_npcs()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Kill Current Vehicle": {
+        "prefix": "menu.kill_current_vehicle",
+        "body": "menu.kill_current_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Level Current Vehicle": {
+        "prefix": "menu.level_current_vehicle",
+        "body": "menu.level_current_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Max all ammo": {
+        "prefix": "menu.max_all_ammo",
+        "body": "menu.max_all_ammo()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Mac Current Ammo": {
+        "prefix": "menu.max_current_ammo",
+        "body": "menu.max_current_ammo()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Refill Boost": {
+        "prefix": "menu.refill_boost",
+        "body": "menu.refill_boost()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Remove Insurance Claims": {
+        "prefix": "menu.remove_insurance_claims",
+        "body": "menu.remove_insurance_claims()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Repair Online Vehicle": {
+        "prefix": "menu.repair_online_vehicle",
+        "body": "menu.repair_online_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Retrieve Personal Vehicle": {
+        "prefix": "menu.retrieve_personal_vehicle",
+        "body": "menu.retrieve_personal_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Start Choose Character": {
+        "prefix": "menu.start_choose_character",
+        "body": "menu.start_choose_character()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Start Creator Mode": {
+        "prefix": "menu.start_creator_mode",
+        "body": "menu.start_creator_mode()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Start Single Player": {
+        "prefix": "menu.start_singleplayer",
+        "body": "menu.start_singleplayer()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Suicide Player": {
+        "prefix": "menu.suicide_player",
+        "body": "menu.suicide_player()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport Forward": {
+        "prefix": "menu.teleport_forward",
+        "body": "menu.teleport_forward()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport To Current Vehicle": {
+        "prefix": "menu.teleport_to_current_vehicle",
+        "body": "menu.teleport_to_current_vehicle()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport To Objective": {
+        "prefix": "menu.teleport_to_objective",
+        "body": "menu.teleport_to_objective()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Teleport To Waypoint": {
+        "prefix": "menu.teleport_to_waypoint",
+        "body": "menu.teleport_to_waypoint()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Boat Pickup": {
+        "prefix": "menu.trigger_boat_pickup",
+        "body": "menu.trigger_boat_pickup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Bunker Production": {
+        "prefix": "menu.trigger_bunker_production",
+        "body": "menu.trigger_bunker_production()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Bunker Research": {
+        "prefix": "menu.trigger_bunker_research",
+        "body": "menu.trigger_bunker_research()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Heli Pickup": {
+        "prefix": "menu.trigger_heli_pickup",
+        "body": "menu.trigger_heli_pickup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Trigger Vip Heli Piickup": {
+        "prefix": "menu.trigger_heli_vip_pickup",
+        "body": "menu.trigger_heli_vip_pickup()\n$0",
+        "description": "Returned value: nil"
+    },
+    "trigger NightClub Production": {
+        "prefix": "menu.trigger_nightclub_production",
+        "body": "menu.trigger_nightclub_production()\n$0",
+        "description": "Returned value: nil"
+    },
+    "Get Assited Aim": {
+        "prefix": "menu.get_assisted_aim",
+        "body": "menu.get_assisted_aim()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Bribe Authorities": {
+        "prefix": "menu.get_bribe_authorities",
+        "body": "menu.get_bribe_authorities()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Cops Turn Blind Eye": {
+        "prefix": "menu.get_cops_turn_blind_eye",
+        "body": "menu.get_cops_turn_blind_eye()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Crash To Sp": {
+        "prefix": "menu.get_disable_crash_to_sp",
+        "body": "menu.get_disable_crash_to_sp()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Send To Island": {
+        "prefix": "menu.get_disable_send_to_island",
+        "body": "menu.get_disable_send_to_island()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Send To Job": {
+        "prefix": "menu.get_disable_send_to_job",
+        "body": "menu.get_disable_send_to_job()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Teleport To Apartment": {
+        "prefix": "menu.get_disable_teleport_to_apartment",
+        "body": "menu.get_disable_teleport_to_apartment()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Vehicle Kick": {
+        "prefix": "menu.get_disable_vehicle_kick",
+        "body": "menu.get_disable_vehicle_kick()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Disable Weather Control": {
+        "prefix": "menu.get_disable_weather_control",
+        "body": "menu.get_disable_weather_control()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Ghost Org": {
+        "prefix": "menu.get_ghost_organisation",
+        "body": "menu.get_ghost_organisation()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get NightVision": {
+        "prefix": "menu.get_nightvision",
+        "body": "menu.get_nightvision()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get OffRadar": {
+        "prefix": "menu.get_offradar",
+        "body": "menu.get_offradar()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Passive": {
+        "prefix": "menu.get_passive",
+        "body": "menu.get_passive()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Reveal Player": {
+        "prefix": "menu.get_reveal_player",
+        "body": "menu.get_reveal_player()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Get Thermal Vision": {
+        "prefix": "menu.get_thermalvision",
+        "body": "menu.get_thermalvision()\n$0",
+        "description": "Returned value: bool"
+    },
+    "Set Assited Aim": {
+        "prefix": "menu.set_assisted_aim",
+        "body": "menu.set_assisted_aim(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Bribe Authorities": {
+        "prefix": "menu.set_bribe_authorities",
+        "body": "menu.set_bribe_authorities(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Cops Trun Blind Eye": {
+        "prefix": "menu.set_cops_turn_blind_eye",
+        "body": "menu.set_cops_turn_blind_eye(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disabel Crash To Sp": {
+        "prefix": "menu.set_disable_crash_to_sp",
+        "body": "menu.set_disable_crash_to_sp(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Send To Island": {
+        "prefix": "menu.set_disable_send_to_island",
+        "body": "menu.set_disable_send_to_island(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Send To Job": {
+        "prefix": "menu.set_disable_send_to_job",
+        "body": "menu.set_disable_send_to_job(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Teleport To Apartment": {
+        "prefix": "menu.set_disable_teleport_to_apartment",
+        "body": "menu.set_disable_teleport_to_apartment(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable vehicle Kick": {
+        "prefix": "menu.set_disable_vehicle_kick",
+        "body": "menu.set_disable_vehicle_kick(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Disable Weather Control": {
+        "prefix": "menu.set_disable_weather_control",
+        "body": "menu.set_disable_weather_control(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Ghost Org": {
+        "prefix": "menu.set_ghost_organisation",
+        "body": "menu.set_ghost_organisation(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set NightVision": {
+        "prefix": "menu.set_nightvision",
+        "body": "menu.set_nightvision(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set OffRadar": {
+        "prefix": "menu.set_offradar",
+        "body": "menu.set_offradar(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Passive": {
+        "prefix": "menu.set_passive",
+        "body": "menu.set_passive(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Reveal Player": {
+        "prefix": "menu.set_reveal_player",
+        "body": "menu.set_reveal_player(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+    "Set Termal Vision": {
+        "prefix": "menu.set_thermalvision",
+        "body": "menu.set_thermalvision(${1|true,false|})\n$0",
+        "description": "Returned value: nil"
+    },
+
+    // Ped >----------------------------------------------------------------------
+    
+    "Get Armour": {
+        "prefix": "localplayer:get_armour",
+        "body": "localplayer:get_armour()$0",
+        "description": "Returned value: Integer"
+    },
+    "Get Can be Targeted": {
+        "prefix": "localplayer:get_can_be_targeted",
+        "body": "localplayer:get_can_be_targeted()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Config Flag": {
+        "prefix": "localplayer:get_config_flag",
+        "body": "localplayer:get_config_flag(${1:integer index})$0",
+        "description": "Returned value: bool"
+    },
+    "Get Current Vehicle": {
+        "prefix": "localplayer:get_current_vehicle",
+        "body": "localplayer:get_current_vehicle()$0",
+        "description": "Returned value: vehicle"
+    },
+    "Get Current Weapon": {
+        "prefix": "localplayer:get_current_weapon",
+        "body": "localplayer:get_current_weapon()$0",
+        "description": "Returned value: weapon"
+    },
+    "Get Freeze Momentum": {
+        "prefix": "localplayer:get_freeze_momentum",
+        "body": "localplayer:get_freeze_momentum()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Godmode": {
+        "prefix": "localplayer:get_godmode",
+        "body": "localplayer:get_godmode()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Heading": {
+        "prefix": "localplayer:get_heading",
+        "body": "localplayer:get_heading()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Player Health": {
+        "prefix": "localplayer:get_health",
+        "body": "localplayer:get_health()$0",
+        "description": "Returned value: number"
+    },
+    "Get hurt Health": {
+        "prefix": "localplayer:get_hurt_health",
+        "body": "localplayer:get_hurt_health()$0",
+        "description": "Returned value: number"
+    },
+    "Get Infinite Ammo": {
+        "prefix": "localplayer:get_infinite_ammo",
+        "body": "localplayer:get_infinite_ammo()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Infinite Clip": {
+        "prefix": "localplayer:get_infinite_clip",
+        "body": "localplayer:get_infinite_clip()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Max health": {
+        "prefix": "localplayer:get_max_health",
+        "body": "localplayer:get_max_health()$0",
+        "description": "Returned value: number"
+    },
+    "Get Nearest Vehicle": {
+        "prefix": "localplayer:get_nearest_vehicle",
+        "body": "localplayer:get_nearest_vehicle()$0",
+        "description": "Returned value: nil"
+    },
+    "Get No Ragdol": {
+        "prefix": "localplayer:get_no_ragdoll",
+        "body": "localplayer:get_no_ragdoll()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Ped Type": {
+        "prefix": "localplayer:get_pedtype",
+        "body": "localplayer:get_pedtype()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Player Id": {
+        "prefix": "localplayer:get_player_id",
+        "body": "localplayer:get_player_id()$0",
+        "description": "Returned value: interger"
+    },
+    "Get Player Position": {
+        "prefix": "localplayer:get_position",
+        "body": "localplayer:get_position()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Reset Flag": {
+        "prefix": "localplayer:get_reset_flag",
+        "body": "localplayer:get_reset_flag(${1:Integer index})$0",
+        "description": "Returned value: bool"
+    },
+    "Get Player Rotation": {
+        "prefix": "localplayer:get_rotation",
+        "body": "localplayer:get_rotation()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Player Run Speed": {
+        "prefix": "localplayer:get_run_speed",
+        "body": "localplayer:get_run_speed()$0",
+        "description": "Returned value: number"
+    },
+    "Get SeatBelt": {
+        "prefix": "localplayer:get_seatbelt",
+        "body": "localplayer:get_seatbelt()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Swim Speed": {
+        "prefix": "localplayer:get_swim_speed",
+        "body": "localplayer:get_swim_speed()$0",
+        "description": "Returned value: number"
+    },
+    "Get Wallet": {
+        "prefix": "localplayer:get_wallet",
+        "body": "localplayer:get_wallet()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Wanted Level": {
+        "prefix": "localplayer:get_wanted_level",
+        "body": "localplayer:get_wanted_level()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Weapon Enabled": {
+        "prefix": "localplayer:get_weapon_enabled",
+        "body": "localplayer:get_weapon_enabled(${1:Integer weapon_hash})$0",
+        "description": "Returned value: bool"
+    },
+    "Is in Vehicle": {
+        "prefix": "localplayer:is_in_vehicle",
+        "body": "localplayer:is_in_vehicle()$0",
+        "description": "Returned value: bool"
+    },
+    "Set Armour": {
+        "prefix": "localplayer:set_armour",
+        "body": "localplayer:set_armour(${1:Integer value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Can Be Targeted": {
+        "prefix": "localplayer:set_can_be_targeted",
+        "body": "localplayer:set_can_be_targeted(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Config Flag": {
+        "prefix": "localplayer:set_config_flag",
+        "body": "localplayer:set_config_flag(${1:Integer index}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Freeze Momentum": {
+        "prefix": "localplayer:set_freeze_momentum",
+        "body": "localplayer:set_freeze_momentum(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Godmode": {
+        "prefix": "localplayer:set_godmode",
+        "body": "localplayer:set_godmode(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Player Health": {
+        "prefix": "localplayer:set_health",
+        "body": "localplayer:set_health(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Hurt Heath": {
+        "prefix": "localplayer:set_hurt_health",
+        "body": "localplayer:set_hurt_health(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Infinite Ammo": {
+        "prefix": "localplayer:set_infinite_ammo",
+        "body": "localplayer:set_infinite_ammo(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Infinite Clip": {
+        "prefix": "localplayer:set_infinite_clip",
+        "body": "localplayer:set_infinite_clip(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Max Health": {
+        "prefix": "localplayer:set_max_health",
+        "body": "localplayer:set_max_health(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set No Ragdoll": {
+        "prefix": "localplayer:set_no_ragdoll",
+        "body": "localplayer:set_no_ragdoll(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Reset Flag": {
+        "prefix": "localplayer:set_reset_flag",
+        "body": "localplayer:set_reset_flag(${1:Integer index}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Player Rotation": {
+        "prefix": "localplayer:set_rotation",
+        "body": "localplayer:set_rotation(${1:vector3 yaw}, ${1:vector3 Pitch}, ${1:vector3 Roll})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Run Speed": {
+        "prefix": "localplayer:set_run_speed",
+        "body": "localplayer:set_run_speed(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Swiming Speed": {
+        "prefix": "localplayer:set_swim_speed",
+        "body": "localplayer:set_swim_speed(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Wallet": {
+        "prefix": "localplayer:set_wallet",
+        "body": "localplayer:set_wallet(${1:Integer value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Wanted Level": {
+        "prefix": "localplayer:set_wanted_level",
+        "body": "localplayer:set_wanted_level(${1:Integer value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Weapong Enabled": {
+        "prefix": "localplayer:set_weapon_enabled",
+        "body": "localplayer:set_weapon_enabled(${1:Integer weapon_hash}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+
+
+
+    // Pickup >----------------------------------------------------------------------
+    //im not sure if this is the correct way to define the pickup
+    "Define Pickup": {
+        "prefix": ["define pickup", "pickup define", "pickup"],
+        "body": "local pickup = replayinterface.get_pickups()$0",
+        "description": "Returned value: pickup"
+    },
+
+    "Get Ammount": {
+        "prefix": "player.get_amount",
+        "body": "player.get_amount()$0",
+        "description": "Returned value: Integer"
+    },
+    "Get Health": {
+        "prefix": "player.get_health",
+        "body": "player.get_health()$0",
+        "description": "Returned value: number"
+    },
+    "Get Model Hash": {
+        "prefix": "player.get_model_hash",
+        "body": "player.get_model_hash()$0",
+        "description": "Returned value: Integer"
+    },
+    "Get Position": {
+        "prefix": "player.get_position",
+        "body": "player.get_position()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Rotation": {
+        "prefix": "player.get_rotation",
+        "body": "player.get_rotation()$0",
+        "description": "Returned value: vector3"
+    },
+    "Set Ammount": {
+        "prefix": "player.set_amount",
+        "body": "player.set_amount${1:Integer value}$0",
+        "description": "Returned value: nil"
+    },
+    "Set Health": {
+        "prefix": "player.set_health",
+        "body": "player.set_health(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Model Hash": {
+        "prefix": "player.set_model_hash",
+        "body": "player.set_model_hash(${1|Integer value,String value|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Pickup Hash": {
+        "prefix": "player.set_pickup_hash",
+        "body": "player.set_pickup_hash(${1|Integer value,String value|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Position": {
+        "prefix": "player.set_position",
+        "body": "player.set_position(${1:vector3 x}, ${1:vector3 y}, ${1:vector3 z})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Rotation": {
+        "prefix": "player.set_rotation",
+        "body": "player.set_rotation(${1:vector3 yaw}, ${1:vector3 Pitch}, ${1:vector3 Roll})$0",
+        "description": "Returned value: nil"
+    },
+
+    // player >----------------------------------------------------------------------
+    
+    "Get Number Of Players": {
+        "prefix": "player.get_number_of_players",
+        "body": "player.get_number_of_players()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Player Name": {
+        "prefix": "player.get_player_name",
+        "body": "player.get_player_name(${1:Integer i})$0",
+        "description": "Returned value: string"
+    },
+    "Get Player Ped": {
+        "prefix": "player.get_player_ped",
+        "body": "player.get_player_ped(${1:Integer i})$0",
+        "description": "Returned value: ped"
+    },
+
+    // Replayinterface >----------------------------------------------------------------------
+    
+    "Get Peds": {
+        "prefix": "replayinterface.get_peds",
+        "body": "replayinterface.get_peds()$0",
+        "description": "Returned value: Iterator<ped>"
+    },
+    "Get Pickups": {
+        "prefix": "replayinterface.get_pickups",
+        "body": "replayinterface.get_pickups()$0",
+        "description": "Returned value: Iterator<pickup>"
+    },
+    "Get Vehicle": {
+        "prefix": "replayinterface.get_vehicles",
+        "body": "replayinterface.get_vehicles()$0",
+        "description": "Returned value: Iterator<vehicle>"
+    },
+
+
+    // Script >----------------------------------------------------------------------
+    //im not sure if this is the correct way to define the script
+    "Define Script": {
+        "prefix": ["define script", "script define", "script"],
+        "body": "local script = localplayer:get_current_weapon()$0",
+        "description": "Returned value: script"
+    },
+
+    "Get Script Bool": {
+        "prefix": "script.get_float",
+        "body": "script.get_float${1:Integer index}$0",
+        "description": "Returned value: float"
+    },
+    "Get Script Float": {
+        "prefix": "script.get_int",
+        "body": "script.get_int${1:Integer index}$0",
+        "description": "Returned value: int"
+    },
+    "Get Script int": {
+        "prefix": "script.get_bool",
+        "body": "script.get_bool${1:Integer index}$0",
+        "description": "Returned value: bool"
+    },
+    "Get Script uint": {
+        "prefix": "script.get_uint",
+        "body": "script.get_uint${1:Integer index}$0",
+        "description": "Returned value: uint"
+    },
+    "Is Script Active": {
+        "prefix": "script.is_active",
+        "body": "script.is_active()$0",
+        "description": "Returned value: bool"
+    },
+    "Set Script Bool": {
+        "prefix": "script.set_bool",
+        "body": "script.set_bool(${1:Integer index}, ${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Script Float": {
+        "prefix": "script.set_float",
+        "body": "script.set_float(${1:Integer index}, ${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Script int": {
+        "prefix": "script.set_int",
+        "body": "script.set_int(${1:Integer index}, Integer value)$0",
+        "description": "Returned value: nil"
+    },
+    "Set Script Uint": {
+        "prefix": "script.set_uint",
+        "body": "script.set_uint(${1:Integer index}, Integer value)$0",
+        "description": "Returned value: nill"
+    },
+
+    // Stats >----------------------------------------------------------------------
+
+    "Get Stat Bool": {
+        "prefix": "stats.get_bool",
+        "body": "stats.get_bool(${1|Integer hash,String statName|})$0",
+        "description": "Returned value: bool"
+    },
+    "Get Stat Bool Masked": {
+        "prefix": "stats.get_bool_masked",
+        "body": "stats.get_bool_masked(${1|Integer hash,String statName|}, ${2:Integer bitIndex})$0",
+        "description": "Returned value: bool"
+    },
+    "Get Stat Float": {
+        "prefix": "stats.get_float",
+        "body": "stats.get_float(${1|Integer hash,String statName|})$0",
+        "description": "Returned value: number"
+    },
+    "Get Stat Int": {
+        "prefix": "stats.get_int",
+        "body": "stats.get_int(${1|Integer hash,String statName|})$0",
+        "description": "Returned value: integer"
+    },
+    "Get Stat Masked Int": {
+        "prefix": "stats.get_masked_int",
+        "body": "stats.get_masked_int(${1|Integer hash,String statName|}, ${2:Integer bitStart}, ${3:Integer bitIndex})$0",
+        "description": "Returned value: bool"
+    },
+    "Set Stat Bool": {
+        "prefix": "stats.set_bool",
+        "body": "stats.set_bool(${1|Integer hash,String statName|}, ${1|true,false|})$0",
+        "description": "Returned value: bool"
+    },
+    "Set Stat Bool Masked": {
+        "prefix": "stats.set_bool_masked",
+        "body": "stats.set_bool_masked(${1|Integer hash,String statName|}, ${1|true,false|}, Integer bitIndex)$0",
+        "description": "Returned value: bool"
+    },
+    "Set Stat Float": {
+        "prefix": "stats.set_float",
+        "body": "stats.set_float(${1|Integer hash,String statName|}, ${1:Number value})$0",
+        "description": "Returned value: bool"
+    },
+    "Set Stat Int": {
+        "prefix": "stats.set_int",
+        "body": "stats.set_int(${1|Integer hash,String statName|}, Integer value)$0",
+        "description": "Returned value: bool"
+    },
+    "Set Stat Masked int": {
+        "prefix": "stats.set_masked_int",
+        "body": "stats.set_masked_int(${1|Integer hash,String statName|}, Integer value, Integer bitStart, Integer bitSize)$0",
+        "description": "Returned value: bool"
+    },
+
+
+    // Vehicle >----------------------------------------------------------------------
+    
+    "Define Vehicle": {
+        "prefix": ["define vehicle", "vehicle define", "vehicle"],
+        "body": "local vehicle = localplayer:get_current_vehicle()$0",
+        "description": "Returned value: vehicle"
+    },
+
+    "Get Acceleration": {
+        "prefix": "vehicle:get_acceleration",
+        "body": "vehicle:get_acceleration()$0",
+        "description": "Returned value: Number"
+    },
+    "Get Bomb Count": {
+        "prefix": "vehicle:get_bomb_count",
+        "body": "vehicle:get_bomb_count()$0",
+        "description": "Returned value: Integer"
+    },
+    "Get Boost": {
+        "prefix": "vehicle:get_boost",
+        "body": "vehicle:get_boost()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Boost Active": {
+        "prefix": "vehicle:get_boost_active",
+        "body": "vehicle:get_boost_active()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Boost Enabled": {
+        "prefix": "vehicle:get_boost_enabled",
+        "body": "vehicle:get_boost_enabled()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Bouyance": {
+        "prefix": "vehicle:get_bouyance",
+        "body": "vehicle:get_bouyance()$0",
+        "description": "Returned value: Number"
+    },
+    "Get BulletProof Tires": {
+        "prefix": "vehicle:get_bulletproof_tires",
+        "body": "vehicle:get_bulletproof_tires()$0",
+        "description": "Returned value: nboolil"
+    },
+    "Get Can Be Targeted": {
+        "prefix": "vehicle:get_can_be_targeted",
+        "body": "vehicle:get_can_be_targeted()$0",
+        "description": "Returned value: bool"
+    },
+    "Get CounterMeasure Count": {
+        "prefix": "vehicle:get_countermeasure_count",
+        "body": "vehicle:get_countermeasure_count()$0",
+        "description": "Returned value: Integer"
+    },
+    "Get Create Money Pickups": {
+        "prefix": "vehicle:get_create_money_pickups",
+        "body": "vehicle:get_create_money_pickups()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Dirt Level": {
+        "prefix": "vehicle:get_dirt_level",
+        "body": "vehicle:get_dirt_level()$0",
+        "description": "Returned value: Number"
+    },
+    "Get Drift Tires Enabled": {
+        "prefix": "vehicle:get_drift_tyres_enabled",
+        "body": "vehicle:get_drift_tyres_enabled()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Gravity": {
+        "prefix": "vehicle:get_gravity",
+        "body": "vehicle:get_gravity()$0",
+        "description": "Returned value: NNumber"
+    },
+    "get Vehicle Godmode": {
+        "prefix": "vehicle:get_godmode",
+        "body": "vehicle:get_godmode()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Vehicle Heading": {
+        "prefix": "vehicle:get_heading",
+        "body": "vehicle:get_heading()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Vehicle Health": {
+        "prefix": "vehicle:get_health",
+        "body": "vehicle:get_health()$0",
+        "description": "Returned value: Number"
+    },
+    "Get Vehicle Max Health": {
+        "prefix": "vehicle:get_max_health",
+        "body": "vehicle:get_max_health()$0",
+        "description": "Returned value: Number"
+    },
+    "Get Vehicle Max Speed": {
+        "prefix": "vehicle:get_max_speed",
+        "body": "vehicle:get_max_speed()$0",
+        "description": "Returned value: Number"
+    },
+    "Get Vehicle Model Hash": {
+        "prefix": "vehicle:get_model_hash",
+        "body": "vehicle:get_model_hash()$0",
+        "description": "Returned value: Integer"
+    },
+    "Get Number Plate Text": {
+        "prefix": "vehicle:get_number_plate_text",
+        "body": "vehicle:get_number_plate_text()$0",
+        "description": "Returned value: String"
+    },
+    "Get Vehicle Position": {
+        "prefix": "vehicle:get_position",
+        "body": "vehicle:get_position()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Vehicle rotation": {
+        "prefix": "vehicle:get_rotation",
+        "body": "vehicle:get_rotation()$0",
+        "description": "Returned value: vector3"
+    },
+    "Get Vehicle Suspension Height": {
+        "prefix": "vehicle:get_suspension_height",
+        "body": "vehicle:get_suspension_height()$0",
+        "description": "Returned value: Number"
+    },
+    "Set Acceleration": {
+        "prefix": "vehicle:set_acceleration",
+        "body": "vehicle:set_acceleration(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Bomb Count": {
+        "prefix": "vehicle:set_bomb_count",
+        "body": "vehicle:set_bomb_count${1:Integer value}$0",
+        "description": "Returned value: nil"
+    },
+    "Set Boost": {
+        "prefix": "vehicle:set_boost",
+        "body": "vehicle:set_boost(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Boost Value": {
+        "prefix": "vehicle:set_boost_enabled",
+        "body": "vehicle:set_boost_enabled(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Bouyance": {
+        "prefix": "vehicle:set_bouyance",
+        "body": "vehicle:set_bouyance(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set BulletProof Tires": {
+        "prefix": "vehicle:set_bulletproof_tires",
+        "body": "vehicle:set_bulletproof_tires(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle Can Be Targeted": {
+        "prefix": "vehicle:set_can_be_targeted",
+        "body": "vehicle:set_can_be_targeted(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle CounterMeasure Count": {
+        "prefix": "vehicle:set_countermeasure_count",
+        "body": "vehicle:set_countermeasure_count${1:Integer value}$0",
+        "description": "Returned value: nil"
+    },
+    "Set Create Money Pickups": {
+        "prefix": "vehicle:set_create_money_pickups",
+        "body": "vehicle:set_create_money_pickups(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Dirt Level": {
+        "prefix": "vehicle:set_dirt_level",
+        "body": "vehicle:set_dirt_level(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Drift Tyres Enabled": {
+        "prefix": "vehicle:set_drift_tyres_enabled",
+        "body": "vehicle:set_drift_tyres_enabled(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Gravity": {
+        "prefix": "vehicle:set_gravity",
+        "body": "vehicle:set_gravity(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle Godmode": {
+        "prefix": "vehicle:set_godmode",
+        "body": "vehicle:set_godmode(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle Health": {
+        "prefix": "vehicle:set_health",
+        "body": "vehicle:set_health(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Max Speed": {
+        "prefix": "vehicle:set_max_speed",
+        "body": "vehicle:set_max_speed(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle Model Hash": {
+        "prefix": "vehicle:set_model_hash",
+        "body": "vehicle:set_model_hash${1:Integer value}$0",
+        "description": "Returned value: nil"
+    },
+    "Set Number Plate Text": {
+        "prefix": "vehicle:set_number_plate_text",
+        "body": "vehicle:set_number_plate_text(String value)$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle Position": {
+        "prefix": "vehicle:set_position",
+        "body": "vehicle:set_position(${1:vector3 x}, ${1:vector3 y}, ${1:vector3 z})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Vehicle Rotation": {
+        "prefix": "vehicle:set_rotation",
+        "body": "vehicle:set_rotation((${1:vector3 yaw}, ${1:vector3 Pitch}, ${1:vector3 Roll}))$0",
+        "description": "Returned value: nil"
+    },
+    "Set Suspension Height": {
+        "prefix": "vehicle:set_suspension_height",
+        "body": "vehicle:set_suspension_height(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+
+
+    // Weapon >----------------------------------------------------------------------
+
+    "Define Weapon": {
+        "prefix": ["define weapon", "weapon define", "weapon"],
+        "body": "local weapon = localplayer:get_current_weapon()$0",
+        "description": "Returned value: weapon"
+    },
+
+    "Get Aim Fov": {
+        "prefix": "weapon:get_aim_fov",
+        "body": "weapon:get_aim_fov()$0",
+        "description": "Returned value: number"
+    },
+    "Get Current Ammo": {
+        "prefix": "weapon:get_current_ammo",
+        "body": "weapon:get_current_ammo()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Damage Type": {
+        "prefix": "weapon:get_damage_type",
+        "body": "weapon:get_damage_type()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Explosion Type": {
+        "prefix": "weapon:get_explosion_type",
+        "body": "weapon:get_explosion_type()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Fire Type": {
+        "prefix": "weapon:get_fire_type",
+        "body": "weapon:get_fire_type()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Weapon Infinite Ammo": {
+        "prefix": "weapon:get_infinite_ammo",
+        "body": "weapon:get_infinite_ammo()$0",
+        "description": "Returned value: bool"
+    },
+    "Get Lock On Range": {
+        "prefix": "weapon:get_lock_on_range",
+        "body": "weapon:get_lock_on_range()$0",
+        "description": "Returned value: number"
+    },
+    "Get Max Ammo": {
+        "prefix": "weapon:get_max_ammo",
+        "body": "weapon:get_max_ammo()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Max MP Ammo": {
+        "prefix": "weapon:get_max_mp_ammo",
+        "body": "weapon:get_max_mp_ammo()$0",
+        "description": "Returned value: integer"
+    },
+    "Get Range": {
+        "prefix": "weapon:get_range",
+        "body": "weapon:get_range()$0",
+        "description": "Returned value: number"
+    },
+    "Set Aim Fov": {
+        "prefix": "weapon:set_aim_fov",
+        "body": "weapon:set_aim_fov(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Current Ammo": {
+        "prefix": "weapon:set_current_ammo",
+        "body": "weapon:set_current_ammo(${1:Integer value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Damage Type": {
+        "prefix": "weapon:set_damage_type",
+        "body": "weapon:set_damage_type(${1:Integer value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Explosion Type": {
+        "prefix": "weapon:set_explosion_type",
+        "body": "weapon:set_explosion_type(${1:Integer value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Weapong Infinite Ammo": {
+        "prefix": "weapon:set_infinite_ammo",
+        "body": "weapon:set_infinite_ammo(${1|true,false|})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Lock On Range": {
+        "prefix": "weapon:set_lock_on_range",
+        "body": "weapon:set_lock_on_range(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+    "Set Range": {
+        "prefix": "weapon:set_range",
+        "body": "weapon:set_range(${1:Number value})$0",
+        "description": "Returned value: nil"
+    },
+
+
+    //Other Cool snippets
+    "Menu Text": {
+        "prefix": ["define text function", "function Menu Text", "menu text"],
+        "body": "local function menuText(string)\n\tmenu.add_action(string, function() end)\nend\n$0",
+        "description": "Returned value: function"
+    },
+
+    "Is Player": {
+        "prefix": ["is player function", "isplayer function", "function isPlayer"],
+        "body": "local function isPlayer(ped)\n\tif ped == nil or ped:get_pedtype() >= 4 then\n\treturn false\n\tend\n\treturn true\nend\n$0",
+        "description": "Returned value: function"
+    },
+
+    "Player Count": {
+        "prefix": ["player count function", "playerCount function", "function Player Count"],
+        "body": "local function getPlayerCount()\n\treturn player.get_number_of_players()\nend\n$0",
+        "description": "Returned value: function"
+    },
+
+    "Teleport To Player": {
+        "prefix": ["teleport to player function", "function Teleport To Player"],
+        "body": "local function teleportToPlayer(pl)\n\tif not pl or pl == nil then return end\n\tlocal pos = pl:get_position()\nif not localplayer:is_in_vehicle() then\n\tlocalplayer:set_position(pos)\n\telse\n\tlocalplayer:get_current_vehicle():set_position(pos)\n\tend\nend\n$0",
+        "description": "Returned value: function"
+    },
+
+}

@@ -1,65 +1,42 @@
-# modest-menu-snippets README
+<h1 align="center">Welcome to Kiddion's Modest Menu Snippets 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/vscode-%5E1.63.0-blue.svg" />
+  <a href="https://github.com/IMXNOOBX/modest-menu-snippets#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/IMXNOOBX/modest-menu-snippets/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/IMXNOOBX/modest-menu-snippets/blob/master/LICENSE" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/Kiddion's Modest Menu Snippets" />
+  </a>
+</p>
 
-This is the README for your extension "modest-menu-snippets". After writing up a brief description, we recommend including the following sections.
+> Unnoffical Kiddion's modest menu vscode snippets
 
-## Features
+### 🏠 [Homepage](https://github.com/IMXNOOBX/modest-menu-snippets#readme)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Prerequisites
 
-For example if there is an image subfolder under your extension project workspace:
+- vscode ^1.63.0
 
-\!\[feature X\]\(images/feature-x.png\)
+## Author
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+👤 **IMXNOOBX**
 
-## Requirements
+* Website: https://imxnoobx.github.io/noob-main
+* Github: [@IMXNOOBX](https://github.com/IMXNOOBX)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 🤝 Contributing
 
-## Extension Settings
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/IMXNOOBX/modest-menu-snippets/issues). You can also take a look at the [contributing guide](https://github.com/IMXNOOBX/modest-menu-snippets/blob/master/CONTRIBUTING.md).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Show your support
 
-For example:
+Give a ⭐️ if this project helped you!
 
-This extension contributes the following settings:
+## 📝 License
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Copyright © 2022 [IMXNOOBX](https://github.com/IMXNOOBX).<br />
+This project is [ISC](https://github.com/IMXNOOBX/modest-menu-snippets/blob/master/LICENSE) licensed.

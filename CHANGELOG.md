@@ -11,4 +11,22 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.1] - 2022-01-05
 
 - Initial commit
-    - 
+    - Made: { 
+        Globals, 
+        Menu
+    }
+
+
+## [1.0.2] - 2022-01-05
+
+- Final Commit
+    - Made: { 
+        Ped, 
+        Pickup, 
+        Player, 
+        Replayinterface, 
+        Scripts, 
+        Stats,
+        Vehicles,
+        Weapons
+    }

@@ -13,8 +13,8 @@
   </a>
 </p>
 
-> Unnoffical Kiddion's modest menu vscode snippets
-> This snippets are specifically made for [Kiddions Moddest Menu](https://www.unknowncheats.me/forum/grand-theft-auto-v/433685-kiddions-modest-external-menu.html)
+> Unnoffical Kiddion's modest menu vscode snippets\n
+> This snippets are specifically made for [Kiddions Moddest Menu](https://www.unknowncheats.me/forum/grand-theft-auto-v/433685-kiddions-modest-external-menu.html)\n
 > Check the Official [Modest Menu Lua Scripting Thread](https://www.unknowncheats.me/forum/grand-theft-auto-v/463868-modest-menu-lua-scripting-megathread.html)
 
 ### 🏠 [Homepage](https://github.com/IMXNOOBX/modest-menu-snippets#readme)

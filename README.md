@@ -8,8 +8,8 @@
   <a href="https://github.com/IMXNOOBX/modest-menu-snippets/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/IMXNOOBX/modest-menu-snippets/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/Kiddion's Modest Menu Snippets" />
+  <a href="https://github.com/IMXNOOBX/modest-menu-snippets/blob/master/LICENSE.md" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/modest-menu-snippets" />
   </a>
 </p>
 

@@ -2,7 +2,7 @@
     "name": "modest-menu-snippets",
     "displayName": "Kiddion's Modest Menu Snippets",
     "description": "Unnoffical Kiddion's modest menu vscode snippets",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icon": "icon.png",
     "engines": {
         "vscode": "^1.63.0"
@@ -24,7 +24,7 @@
         "snippets": [
             {
                 "language": "lua",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets.code-snippets"
             }
         ]
     }

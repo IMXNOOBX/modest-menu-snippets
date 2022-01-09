@@ -30,3 +30,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
         Vehicles,
         Weapons
     }
+
+## [1.0.3] - 2022-01-05
+
+- Final Commit
+    - Fix package.json
